@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado del Curso</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-white">
+    <div class="container mt-4">
+        <h1 class="text-center">ESTADO DEL CURSO</h1>
+        <hr>
+
+        <div class="d-grid gap-2 mb-3">
+            <button
+                type="button"
+                id="btn_calcular"
+                class="btn btn-primary"
+            >
+                CALCULAR ESTADO DEL CURSO
+            </button>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-floating mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="total_aprobados"
+                        placeholder="0"
+                        readonly
+                    />
+                    <label for="total_aprobados">Total de Aprobados</label>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-floating mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="total_supletorio"
+                        placeholder="0"
+                        readonly
+                    />
+                    <label for="total_supletorio">Total de Supletorio</label>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-floating mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="total_reprobados"
+                        placeholder="0"
+                        readonly
+                    />
+                    <label for="total_reprobados">Total de Reprobados</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="promedio_curso"
+                        placeholder="0"
+                        readonly
+                    />
+                    <label for="promedio_curso">Promedio del curso</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="estado_curso"
+                        placeholder="Estado"
+                        readonly
+                    />
+                    <label for="estado_curso">Estado del curso</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-grid gap-2 mt-2">
+            <button
+                type="button"
+                id="btn_limpiar"
+                class="btn btn-danger"
+            >
+                LIMPIAR
+            </button>
+        </div>
+
+        <hr>
+        <p>Notas del curso:</p>
+        <div id="lista_notas" class="text-info"></div>
+
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/curso.js"></script>
+</body>
+</html>
